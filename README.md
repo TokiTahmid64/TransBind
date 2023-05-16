@@ -2,6 +2,7 @@
 # ATLASS: Leveraging Self-Attention-Based Transfer Learning and Synthetic Samples for Precise Detection of DNA Binding Proteins and Amino Acids.
 
 
+![Capture](https://github.com/TokiTahmid64/ATLASS/assets/44304799/dc68c23c-c208-42b1-96f7-0aabed10b6e0)
 
 
 ## Authors
