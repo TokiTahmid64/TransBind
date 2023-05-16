@@ -24,6 +24,30 @@ We present ATLASS, a highly accurate deep learning pipeline to identify DNA bind
 | DNA Binding Protein Identification(Training) | PDB-1075 |
 | DNA Binding Protein Identification(Testing) | PDB-186 |
 | DNA Binding Amino Acid Identification(Training) | PDNA-224,PDNA-316,PDNA-543 |
-| DNA Binding Protein Identification(Testing) | PDNA-41 |
+| DNA Binding Amino Acid Identification(Testing) | PDNA-41 |
 
+
+
+## Dataset Link
+
+All the used datasets are provided here:
+[ATLASS DATASET](https://drive.google.com/drive/folders/13dZsgurLKU8wR0YVdfzMX_GImqkqxgCW?usp=sharing)
+
+The Dataset contains the following data:
+
+- DNA binding Protein datasets:
+    - PDB 1075 (Raw data)
+    - PDB 1075 (ProtTrans features)
+    - PDB 186 (Raw data)
+    - PDB 186 (ProtTrans features)
+    - Trained Best model weights
+
+- DNA binding Amino Acid datasets:
+    - PDNA 224 (Raw data and ProtTrans Features)
+    - PDNA 316 (Raw data and ProtTrans Features)
+    - PDNA 543 (Raw data and ProtTrans Features)
+    - PDNA 41 (Raw data and ProtTrans Features)
+    - Trained Best model weights
+- Used data to find the significance level with [iProDNA](https://pubmed.ncbi.nlm.nih.gov/31881828/) and Residue wise accuracy analysis
+- The original ProtTrans-X-50 model weights to generate features from protein sequence.
 
