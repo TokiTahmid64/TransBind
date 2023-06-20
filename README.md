@@ -1,5 +1,5 @@
 
-# ATLASS: Leveraging Self-Attention-Based Transfer Learning and Synthetic Samples for Precise Detection of DNA Binding Proteins and Amino Acids.
+# TransBind: Enhancing precise detection of DNA-binding proteins and DNA-protein binding residues using language model and deep learning
 
 
 ![Capture](https://github.com/TokiTahmid64/ATLASS/assets/44304799/dc68c23c-c208-42b1-96f7-0aabed10b6e0)
@@ -15,7 +15,7 @@
 
 ## Abstract
 
-We present ATLASS, a highly accurate deep learning pipeline to identify DNA binding proteins and DNA binding amino acids within protein sequences by employing self-attention based transfer learning instead of using historical profile data for the first time. Global and local feature extractions by self-attention and inception learning, along with synthesized data generation for coping up with the data imbalance problem, allows ATLASS to perform better than the previously proposed methods in most of the metrices. We report the performance of ATLASS in comparison with other proposed methods on the benchmark datasets PDB1075, PDB186 for DNA binding protein identification, and PDNA41,PDNA224,PDNA316,PDNA543 for DNA binding amino acid residue identification. We also report that the running time is reduced significantly than any other previously reported methods while keeping a higher accuracy. 
+We present TransBind, a highly accurate deep learning pipeline to identify DNA binding proteins and DNA binding amino acids within protein sequences by employing self-attention based transfer learning instead of using historical profile data for the first time. Global and local feature extractions by self-attention and inception learning, along with synthesized data generation for coping up with the data imbalance problem, allows TransBind to perform better than the previously proposed methods in most of the metrices. We report the performance of TransBind in comparison with other proposed methods on the benchmark datasets PDB1075, PDB186 for DNA binding protein identification, and PDNA41,PDNA224,PDNA316,PDNA543 for DNA binding amino acid residue identification. We also report that the running time is reduced significantly than any other previously reported methods while keeping a higher accuracy. 
 
 
 ## Tasks and Used Datasets
@@ -32,7 +32,7 @@ We present ATLASS, a highly accurate deep learning pipeline to identify DNA bind
 ## Dataset Link
 
 All the used datasets are provided here:
-[ATLASS DATASET](https://drive.google.com/drive/folders/13dZsgurLKU8wR0YVdfzMX_GImqkqxgCW?usp=sharing)
+[TransBind DATASET](https://drive.google.com/drive/folders/13dZsgurLKU8wR0YVdfzMX_GImqkqxgCW?usp=sharing)
 
 The Dataset contains the following data:
 
