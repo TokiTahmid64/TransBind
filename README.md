@@ -2,7 +2,8 @@
 # TransBind: Enhancing precise detection of DNA-binding proteins and DNA-protein binding residues using language model and deep learning
 
 
-![Capture](https://github.com/TokiTahmid64/ATLASS/assets/44304799/dc68c23c-c208-42b1-96f7-0aabed10b6e0)
+![image](https://github.com/TokiTahmid64/TransBind/assets/44304799/67ea0fa7-c838-4974-be33-142fa5309f73)
+
 
 
 ## Authors
