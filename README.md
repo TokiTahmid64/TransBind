@@ -6,11 +6,7 @@
 
 
 
-## Authors
 
-- [Md Toki Tahmid](https://scholar.google.com/citations?user=Oc81Bm8AAAAJ&hl=en)
-- [A.K.M. Mehedi Hasan](https://www.researchgate.net/profile/Akmmehedi-Hasan)
-- [Md Shamsuzzoha Bayzid](https://scholar.google.com/citations?hl=en&user=h2vHz3wAAAAJ)
 
 
 
