@@ -49,3 +49,5 @@ The Dataset contains the following data:
 - Used data to find the significance level with [iProDNA](https://pubmed.ncbi.nlm.nih.gov/31881828/) and Residue wise accuracy analysis
 - The original ProtTrans-X-50 model weights to generate features from protein sequence.
 
+
+The script to generate the protbert features from the raw sequences are provided in "generate_protbert_features.ipynb" notebook
