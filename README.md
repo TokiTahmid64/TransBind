@@ -31,6 +31,11 @@ We present TransBind, a highly accurate deep learning pipeline to identify DNA b
 All the used datasets are provided here:
 [TransBind DATASET](https://drive.google.com/drive/folders/13dZsgurLKU8wR0YVdfzMX_GImqkqxgCW?usp=sharing)
 
+
+For the latest dataset please download it from (Recommended) :
+[Transbind Dataset Full](https://zenodo.org/records/10215073)
+
+
 The Dataset contains the following data:
 
 - DNA binding Protein datasets:
