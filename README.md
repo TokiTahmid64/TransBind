@@ -69,3 +69,5 @@ The script to generate the protbert features from the raw sequences are provided
       -protein_level_best_model
   - Run the inference.py file from Protein_Level folder
   - It will reproduce the metrices of the protein level task
+ 
+  # To Train the model from scratch: Run the train_and_validation.py file
