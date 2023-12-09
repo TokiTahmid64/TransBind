@@ -71,3 +71,16 @@ The script to generate the protbert features from the raw sequences are provided
   - It will reproduce the metrices of the protein level task
  
 **  To Train the model from scratch**: Run the train_and_validation.py file
+
+## Reproducing Result: Residue Level 
+
+- Inside the dataset folder (previously created for protein level task), put the following files:
+  -  LLM_features_pdna_test.gz
+  -  LLM_features_pdna224.gz
+  -  LLM_features_pdna316.gz
+  -  LLM_features_pdna543.pkl.gz
+  -  pdna224_label.pkl.gz
+  -  pdna316_label.pkl.gz
+  -  pdna543_label.pkl.gz
+  -  pdnatest_label.pkl.gz
+  -  residue_level_model.pth
