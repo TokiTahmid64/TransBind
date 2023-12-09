@@ -64,8 +64,8 @@ The script to generate the protbert features from the raw sequences are provided
 - Inside the folder, put the following files (From the download link provided above):
   - LLM_features_pdb_1075.gz
   - LLM_features_pdb_186.gz
-  - train.npy
-  - test.npy
+  - train.npy (already added to git)
+  - test.npy (already added to git)
   - protein_level_best_model
     
 - Run the inference.py file from Protein_Level folder
