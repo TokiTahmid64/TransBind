@@ -61,13 +61,31 @@ The script to generate the protbert features from the raw sequences are provided
 
 ## Reproducing Results : Protein Level ( Train Set: PDB1075; Test Set: PDB186)
 - Create a folder names 'dataset' inside the main transbind directory, where other folders are located
-- Inside the folder, put the following files (From the download link provided above)
-      -LLM_features_pdb_1075.gz
-      -LLM_features_pdb_186.gz
-      -train.npy
-      -test.npy
-      -protein_level_best_model
-  - Run the inference.py file from Protein_Level folder
-  - It will reproduce the metrices of the protein level task
+- Inside the folder, put the following files (From the download link provided above):
+  - LLM_features_pdb_1075.gz
+  - LLM_features_pdb_186.gz
+  - train.npy
+  - test.npy
+  - protein_level_best_model
+    
+- Run the inference.py file from Protein_Level folder
+- It will reproduce the metrices of the protein level task
  
 **  To Train the model from scratch**: Run the train_and_validation.py file
+
+## Reproducing Result: Residue Level 
+
+- Inside the dataset folder (previously created for protein level task), put the following files:
+  -  LLM_features_pdna_test.gz
+  -  LLM_features_pdna224.gz
+  -  LLM_features_pdna316.gz
+  -  LLM_features_pdna543.pkl.gz
+  -  pdna224_label.pkl.gz
+  -  pdna316_label.pkl.gz
+  -  pdna543_label.pkl.gz
+  -  pdnatest_label.pkl.gz
+  -  residue_level_model.pth
+-  Run the inference.py file (inside residue_level folder) to reproduce the test results
+-  Run the train_and_validation.py file to train and get validation results from scratch
+
+
