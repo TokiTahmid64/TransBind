@@ -15,7 +15,6 @@ import torch.nn as nn
 import torch.optim as optim 
 
 import torch.nn.functional as F
-from torch.utils.tensorboard import SummaryWriter
 
 import sklearn
 from sklearn.metrics import matthews_corrcoef
@@ -139,12 +138,12 @@ class MinimalDataset(Dataset):
 
 
 
-train_data=pickle.load(gzip.open('D:/Toki_1805030/Dna_protein_interaction/DNA_PROTEIN-20220506T153412Z-002/DNA_PROTEIN/Protx50_features_train.pkl.gz', "rb"))
-test_data=pickle.load(gzip.open('D:/Toki_1805030/Dna_protein_interaction/DNA_PROTEIN-20220506T153412Z-002/DNA_PROTEIN/Protx50_features_test.pkl.gz', "rb"))
+train_data=pickle.load(gzip.open('../dataset/LLM_features_pdb_1075.gz', "rb"))
+test_data=pickle.load(gzip.open('../dataset/LLM_features_pdb_186.gz', "rb"))
 
 
-train_y=np.load('D:/Toki_1805030/Dna_protein_interaction/DNA_PROTEIN-20220506T153412Z-002/DNA_PROTEIN/train.npy')
-test_y=np.load('D:/Toki_1805030/Dna_protein_interaction/DNA_PROTEIN-20220506T153412Z-002/DNA_PROTEIN/test.npy')
+train_y=np.load('../dataset/train.npy')
+test_y=np.load('../dataset/test.npy')
 
 
 
@@ -168,7 +167,7 @@ device=torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
 #Load the model from appropriate location
-model=torch.load(r'.../models/best_model')
+model=torch.load('../dataset/protein_level_best_model')
 
 test_dataset = MinimalDataset(test_data_x,test_y)
 
@@ -222,4 +221,4 @@ for item in all_pred:
         all_pred_concat.append(i.item())
  
 res=report(all_true_concat,all_pred_concat)
-res
+# print(res)

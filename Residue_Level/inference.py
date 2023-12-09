@@ -1,5 +1,5 @@
 
-!pip install imbalanced-learn
+# !pip install imbalanced-learn
 from imblearn.over_sampling import ADASYN
 import torch
 from torch import nn
@@ -137,8 +137,8 @@ class MinimalDataset(Dataset):
 
    
 #test
-test_x=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdnatest_protbert.pkl.gz', "rb"))
-test_y=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdnatest_label.pkl.gz',"rb"))
+test_x=pickle.load(gzip.open('../dataset/LLM_features_pdna_test.gz', "rb"))
+test_y=pickle.load(gzip.open('../dataset/pdnatest_label.pkl.gz',"rb"))
 test_data_x=test_x["ProtBert_features"]
 
 for i in range(len(test_data_x)):
@@ -165,9 +165,14 @@ all_label_np_test=np.array(all_label_test)
 x_test=all_seq_torch_test
 y_test=all_label_np_test
 
+train_dataset = MinimalDataset(x_test,y_test)
+
+
+data_loader_test = DataLoader(train_dataset, batch_size=512, shuffle=True, collate_fn=lambda x: x)
+
 
 model=Baseline_1()
-model.load_state_dict(torch.load('.../model/best_model.pth'))
+model.load_state_dict(torch.load('../dataset/residue_level_model.pth'))
 model.eval()
 
 
@@ -180,7 +185,7 @@ def check_mcc(model):
     all_pred=[]
     model.eval()
     with torch.no_grad():
-         for i, batch in enumerate(data_loader_valid):     
+         for i, batch in enumerate(data_loader_test):     
             lens=[]
             data=[]
             labels=[]

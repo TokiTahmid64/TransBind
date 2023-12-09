@@ -139,12 +139,12 @@ class MinimalDataset(Dataset):
 
 
 
-train_data=pickle.load(gzip.open('D:/Toki_1805030/Dna_protein_interaction/DNA_PROTEIN-20220506T153412Z-002/DNA_PROTEIN/Protx50_features_train.pkl.gz', "rb"))
-test_data=pickle.load(gzip.open('D:/Toki_1805030/Dna_protein_interaction/DNA_PROTEIN-20220506T153412Z-002/DNA_PROTEIN/Protx50_features_test.pkl.gz', "rb"))
+train_data=pickle.load(gzip.open('../dataset/LLM_features_pdb_1075.gz', "rb"))
+test_data=pickle.load(gzip.open('../dataset/LLM_features_pdb_186.gz', "rb"))
 
 
-train_y=np.load('D:/Toki_1805030/Dna_protein_interaction/DNA_PROTEIN-20220506T153412Z-002/DNA_PROTEIN/train.npy')
-test_y=np.load('D:/Toki_1805030/Dna_protein_interaction/DNA_PROTEIN-20220506T153412Z-002/DNA_PROTEIN/test.npy')
+train_y=np.load('../dataset/train.npy')
+test_y=np.load('../dataset/test.npy')
 
 
 
@@ -383,5 +383,5 @@ for epoch in range(50): # 40,
 print("\n\n\n")
 
 
-torch.save(model, r'...\DNA_PROTEIN\best_model')
+torch.save(model, '../dataset/protein_level_best_model')
 

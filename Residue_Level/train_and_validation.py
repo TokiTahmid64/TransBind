@@ -1,5 +1,5 @@
 
-!pip install imbalanced-learn
+# !pip install imbalanced-learn
 from imblearn.over_sampling import ADASYN
 import torch
 from torch import nn
@@ -133,17 +133,26 @@ class MinimalDataset(Dataset):
     def __len__(self):
         return len(self.data)
 
-train_x_1=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdna224_protbert.pkl.gz', "rb"))
-train_y_1=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdna224_label.pkl.gz',"rb"))
+train_x_1=pickle.load(gzip.open('../dataset/LLM_features_pdna224.gz', "rb"))
+train_y_1=pickle.load(gzip.open('../dataset/pdna224_label.pkl.gz',"rb"))
 
-train_x_2=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdna316_protbert.pkl.gz', "rb"))
-train_y_2=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdna316_label.pkl.gz',"rb"))
+# train_x_2=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdna316_protbert.pkl.gz', "rb"))
+# train_y_2=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdna316_label.pkl.gz',"rb"))
 
-train_x_3=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdna543_protbert.pkl.gz', "rb"))
-train_y_3=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdna543_label.pkl.gz',"rb"))
+# train_x_3=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdna543_protbert.pkl.gz', "rb"))
+# train_y_3=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdna543_label.pkl.gz',"rb"))
 
-test_x=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdnatest_protbert.pkl.gz', "rb"))
-test_y=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdnatest_label.pkl.gz',"rb"))
+# test_x=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdnatest_protbert.pkl.gz', "rb"))
+# test_y=pickle.load(gzip.open('D:/Toki_1805030/residue_level_task/dataset/pdnatest_label.pkl.gz',"rb"))
+
+train_x_2=pickle.load(gzip.open('../dataset/LLM_features_pdna316.gz', "rb"))
+train_y_2=pickle.load(gzip.open('../dataset/pdna316_label.pkl.gz',"rb"))
+
+train_x_3=pickle.load(gzip.open('../dataset/LLM_features_pdna543.pkl.gz', "rb"))
+train_y_3=pickle.load(gzip.open('../dataset/pdna543_label.pkl.gz',"rb"))
+
+test_x=pickle.load(gzip.open('../dataset/LLM_features_pdna_test.gz', "rb"))
+test_y=pickle.load(gzip.open('../dataset/pdnatest_label.pkl.gz',"rb"))
 
 # Preprocessing data
 
@@ -556,7 +565,7 @@ report(valid_y_1,dataset_1_res[0])
 
 #Saving the model
 
-torch.save(model.state_dict(), '.../model/best_model.pth')
+# torch.save(model.state_dict(), '.../model/best_model.pth')
 
 
 
