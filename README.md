@@ -62,11 +62,11 @@ The script to generate the protbert features from the raw sequences are provided
 ## Reproducing Results : Protein Level ( Train Set: PDB1075; Test Set: PDB186)
 - Create a folder names 'dataset' inside the main transbind directory, where other folders are located
 - Inside the folder, put the following files (From the download link provided above)
-      -LLM_features_pdb_1075.gz
-      -LLM_features_pdb_186.gz
-      -train.npy
-      -test.npy
-      -protein_level_best_model
+      - LLM_features_pdb_1075.gz
+      - LLM_features_pdb_186.gz
+      - train.npy
+      - test.npy
+      - protein_level_best_model
   - Run the inference.py file from Protein_Level folder
   - It will reproduce the metrices of the protein level task
  
