@@ -60,6 +60,9 @@ The Dataset contains the following data:
 
 The script to generate the protbert features from the raw sequences are provided in "generate_protbert_features.ipynb" notebook
 
+WebServer Link: https://trans-bind-web-server-frontend.vercel.app/
+
+
 
 
 
