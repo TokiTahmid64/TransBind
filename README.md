@@ -61,6 +61,7 @@ The Dataset contains the following data:
 The script to generate the protbert features from the raw sequences are provided in "generate_protbert_features.ipynb" notebook
 
 WebServer Link: https://trans-bind-web-server-frontend.vercel.app/
+(Please wait for around 1 minute 30 seconds after submission for the first time, You might need to click the submission button again after this time. After the first query, the responses do not require any more additional time. Initial server establishment requires a little time)
 
 
 
